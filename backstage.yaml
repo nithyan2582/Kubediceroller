@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Kubeexample
+  name: dice-roller
   labels:
     'backstage.io/kubernetes-id': dice-roller
 spec:
@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: Kubeexample
+        app: dice-roller
         'backstage.io/kubernetes-id': dice-roller
     spec:
       containers:
